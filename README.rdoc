@@ -1,0 +1,43 @@
+== LGL UI 0.1 javascript
+
+LGL UI is javascript package with several UI controls.
+
+For more information, see http://github.com/greenlaw110/lgl_ui
+
+== What's inside?
+
+* scrodicator. A visual indicator indicate the next up/down element to scroll out.
+* scrollbar. A wrapper of Control.Scrollbar from http://livepipe.net/control/scrollbar. Easy to integrate with scrodicator
+
+== Installation/Usage
+
+In order to use scrodicator, you need prototype.js (from http://prototypejs.org), 
+effects.js (from http://script.aculo.us), prototype-element-extensions.js, lgl_ui.js, 
+scrodicator.js.
+
+To use scrollbar, you need additional slider.js (from http://script.aculo.us), 
+livepipe.js (http://livepipe.net), scrollbar.js (http://livepipe.net)
+
+Put required js files in a directory of your website, e.g. /javascripts.
+
+Now, you can include the scripts by adding the following 
+tags to the HEAD section of your HTML pages:
+
+ <script src="/javascripts/xxx.js" type="text/javascript"></script>
+ 
+For detail usage, please refer to the sample files.
+
+
+== The distribution
+
+The distribution contains two sample html files:
+
+* sample-scrodicator.html. Demonstrate how to use scrodicator in your html file
+* sample-scrodicator-scrollbar.html. Demonstrate how to use scrodicator along with a customized scrollbar in your html file
+
+The required javascript file is either included in the src folder, or via http link defined in the sample file.
+
+== License
+
+lgl_ui is licensed under the terms of the MIT License, 
+see the included MIT-LICENSE file.
