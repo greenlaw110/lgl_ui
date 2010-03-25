@@ -10,7 +10,7 @@ if (!LGL) var LGL={};
 
 LGL.UI = {
 	ZIndexDelta: {
-		Scrodicator: 20,
+		Scrolldicator: 20,
 		Scrollbar: 10,
 		eof: 0
 	},

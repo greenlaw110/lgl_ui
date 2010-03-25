@@ -44,7 +44,7 @@ LGL.UI.Scrolldicator = Class.create({
             vp = document.viewport;
             h = vp.getHeight();
             w = vp.getWidth();
-            right = (options.indicatorAlign == 'left') ? '100%' : w - (area.viewportOffset()[0] + area.getWidth()); 
+            right = (options.indicatorAlign == 'left') ? '100%': w - (area.viewportOffset()[0] + area.getWidth() - 15); 
             delta = area.offsetParent.cumulativeScrollOffset()[1];
             top = top_ - delta;
             bottom_ = bottom =  h - (top + area.getHeight());
