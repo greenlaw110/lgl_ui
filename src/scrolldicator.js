@@ -119,7 +119,7 @@ LGL.UI.Scrollbar = Class.create({
         container.insert(track.insert(handle.insert(bar).insert(line)));
 
         var p = area.parentNode;
-        var els = p.immediateDescendants;
+        var els = p.immediateDescendants();
         var bro;
         for (var i = 0, l = els.length; i < l; ++i) {
             if (els[i] === area) {
@@ -129,7 +129,7 @@ LGL.UI.Scrollbar = Class.create({
         }
         container.insert(area.remove());
         if (bro) bro.insert({after: container});
-        else p.insert({bottom: container});
+        else p.insert({top: container});
         
         handle.style.zIndex = area.style.zIndex + LGL.UI.ZIndexDelta.Scrollbar;
         if (options.textAlign == 'left') {
