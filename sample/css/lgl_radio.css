@@ -1,0 +1,29 @@
+div.radio-caption {
+	float:left;
+	clear:left;
+	margin: 10px;
+	font-weight: bold;
+}
+
+div.radio-option-group {
+	float: left;
+	padding: 4px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+div.radio-option {
+	float: left;
+	margin: 0px;
+	padding: 2px 40px;
+	border: 1px solid #eee;
+	background: whitesmoke;
+}
+
+div.radio-option:hover {
+	background: white;
+}
+
+div.radio-option.selected {
+	background: url(/img/ok.png) 10px 50% no-repeat whitesmoke;
+}

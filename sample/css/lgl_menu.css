@@ -1,0 +1,15 @@
+.menu {
+	background: whitesmoke;
+}
+
+.menu > .item {
+	margin: 0;
+	padding: 3px 8px;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+.menu > .item:hover {
+	background: #990099;
+	color: #fff;
+}

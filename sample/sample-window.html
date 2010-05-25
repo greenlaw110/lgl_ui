@@ -1,0 +1,98 @@
+<!DOCTYPE HTML> 
+<html>
+	<head>
+	    <link rel="stylesheet" type="text/css" media="screen" href="css/sample.css">
+	    <link rel="stylesheet" type="text/css" media="screen" href="css/lgl_window.css">
+		<script type="text/javascript" src="http://prototypejs.org/assets/2009/8/31/prototype.js"></script>
+		<script type="text/javascript" src="http://script.aculo.us/effects.js"></script>
+		<script type="text/javascript" src="http://script.aculo.us/slider.js"></script>
+		<script type="text/javascript" src="../src/lgl_ui.js"></script>
+		<script type="text/javascript" src="../src/lgl_modal.js"></script>		
+		<script type="text/javascript" src="../src/lgl_hover.js"></script>		
+		<script type="text/javascript" src="../src/lgl_tip.js"></script>		
+		<script type="text/javascript" src="../src/lgl_dialog.js"></script>		
+	</head>
+	<body>
+	    <div id="content" class="clearfix">
+          	<h1>LGL Windows Samples</h1>
+          	
+            <div class="clearfix sample-section">
+                <h2>Dialog</h2>
+                <p>This sample demonstrate how to use lgl_dialog to replace browser alert/confirm/input</p>
+                <h3>Usage</h3>
+                <pre>
+&lt;script type="text/javascript"&gt;
+    LGL.UI.alert("Hello world");
+    LGL.UI.confirm("Do like this library?", {
+        onYes: function() {
+            LGL.UI.alert("Oh really? Thank you!");
+        },
+        onNo: function() {
+            LGL.UI.alert("oops, sorry about that...");
+        }
+    });
+    LGL.UI.input("What's your name?", {
+        onOkay: function() {
+            LGL.UI.alert("Good on you, " + this.value + "!");
+        }
+    });
+&lt;/script&gt;
+                </pre>
+                <h3>Demo</h3>
+                <div class="demo" id='dialog_demo'>
+                    <p><a href="#" id="show_alert">Click to launch alert</a></p>
+                    <p><a href="#" id="show_confirm">Click to launch confirm</a></p>
+                    <p><a href="#" id="show_input">Click to launch input</a></p>
+                </div>
+                <script type="text/javascript">
+                    $('dialog_demo').observe('click', function(ev) {
+                        var alert=ev.findElement('#show_alert');
+                        if (alert) {
+                            LGL.UI.alert("Hello world");
+                            return;
+                        }
+                        var confirm = ev.findElement('#show_confirm');
+                        if (confirm) {
+                            LGL.UI.confirm("Do like this library?", {
+                                onYes: function() {
+                                    LGL.UI.alert("Oh really? Thank you!");
+                                },
+                                onNo: function() {
+                                    LGL.UI.alert("oops, sorry about that...");
+                                }
+                            });
+                            return;
+                        }
+                        var input = ev.findElement('#show_input');
+                        if (input) {
+                            LGL.UI.input("What's your name?", {
+                                onOkay: function() {
+                                    LGL.UI.alert("Good on you, " + this.value + "!");
+                                }
+                            });
+                        }
+                    });
+                </script>
+            </div>
+
+            <div class="clearfix sample-section">
+                <h2>Tool tip</h2>
+                <p>This sample demonstrate how to use lgl_tip to replace browser tooltip with your customized tip</p>
+                <h3>Usage</h3>
+                <p>There is nothing special need to do in your html file, just add "title='your tip'" as normal to your element</p>
+                <code>
+                    &lt;a href="http://www.google.com" title="aha, where do you suppose to go?"&gt;Yahoo&lt;/div&gt;
+                </code>
+                <p>Make sure you include lgl_tip.js in your document</p>
+                <code>
+                    &lt;script type="text/javascript" src="/path-to-js/lgl_tip.js"&gt;&lt;/script&gt;
+                </code>
+                <h3>Demo</h3>
+                <div class="demo">
+                    <a href="http://www.google.com" title="aha, where do you suppose to go?">Yahoo</a>
+                </div>
+            </div>
+
+        </div>
+	</body>
+</html>

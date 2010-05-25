@@ -1,0 +1,57 @@
+.lgl-modal,
+.lgl-hover {
+	font-size: 12px;
+	font-family: tahoma, sans-serif;
+	font-weight: normal;
+    border: 1px solid #dedede;
+    padding:10px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.lgl-modal > .content {
+	background: white;
+	padding: 10px;
+}
+
+.lgl-modal form .fields {
+	padding: 8px 0 8px 0;
+}
+
+.lgl-hover.lgl-tip {
+	padding: 5px;
+	border:none;
+	background: #ccccff;
+	color: #444;
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,.4);
+    -moz-box-shadow: 3px 3px 3px rgba(0,0,0,.4);
+}
+
+.dialog .content {
+    background: white;
+    padding: 10px 20px 0px 20px;
+    min-width: 200px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.dialog .footer,
+.lgl-modal .footer {
+	border-top: 1px solid #666;
+}
+
+.lgl-modal .subject {
+	font-size: 120%;
+	font-weight: bold;
+	padding: 10px 0 10px 0;
+}
+
+.dialog .actions,
+.lgl-modal .actions {
+	padding: 10px;
+	float: right;
+}
+
+.dialog p {
+	margin: 10px 0px 20px 0;
+}

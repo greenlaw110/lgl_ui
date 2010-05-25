@@ -1,0 +1,109 @@
+body {
+    text-align:center;
+    background:#fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:80%;
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    color: #ccf;
+}
+p {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+code, .demo, .demo a, pre {
+    background: #efefef;
+    color: #444;
+}
+.notice {
+    border: 1px solid #f4a;
+    background: #fef;
+    padding: 2px;
+}
+
+#content {
+    position:relative;
+    background:#444;
+    color: #ccc;
+    width:60%;
+    text-align:left;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding:30px;
+}
+
+#form_area {
+	border: none;
+	display:block;
+	position:relative;
+	clear:both;
+	float:left;
+	width:100%;
+	height:400px;
+	overflow:hidden;
+}
+
+.demo {
+    border: #ccccff 1px solid;
+    position: relative;
+    float: left;
+    padding: 5px 10px;
+}
+
+.sample-section {
+    display:block;
+    position:relative;
+    float: left;
+    clear:both;
+    width: 90%;
+}
+
+.sample-section h2 {
+    border-bottom: 1px solid #ccc;
+}
+
+.clearfix:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+}
+
+.actions {
+    display:block;
+    position:relative;
+    width:auto;
+    margin:0 auto;
+    padding: 15px;
+}
+
+.actions li, .actions form {
+    display:inline;
+    margin-right: 0.5em;
+}
+
+.actions a {
+	height: auto;
+    padding:3px 10px;
+	border: none;
+    margin: 0;
+    font-family: Candara,Arial,Helvetica,sans-serif;
+    font-size: 90%;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    cursor: pointer;
+}
+
+.actions a:hover, 
+a.action:hover
+{
+    text-decoration:none;
+	opacity: .8;
+}
+

@@ -1,0 +1,27 @@
+ul.tree {
+	display:block;
+}
+
+ul.tree li {
+	margin: 5px 0 5px 13px;
+}
+
+ul.tree .handle {
+	display:inline-block;
+	height: 10px;
+	width: 10px;
+	margin-right: 3px;
+}
+
+ul.tree .handle.collapsed{
+	background: url(/img/collapsed.png) 1px 2px no-repeat; 
+}
+
+ul.tree .handle.expanded {
+    background: url(/img/expanded.png) 1px 2px no-repeat;;
+}
+
+ul.tree .handle.leave {
+    background: url(/img/leave.gif) no-repeat top left;
+}
+
